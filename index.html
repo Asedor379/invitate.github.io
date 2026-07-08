@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Te invito a mis 15 años - ¡Celebra conmigo esta noche mágica!">
+
+  <!-- Open Graph para WhatsApp y redes sociales -->
+  <meta property="og:title" content="Mis 15 Años - [Nombre de la festejante]">
+  <meta property="og:description" content="¡Te invito a celebrar mi gran noche! Confirma tu asistencia">
+  <meta property="og:image" content="img/share.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://tu-dominio.com">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Mis 15 Años - [Nombre]">
+  <meta name="twitter:description" content="¡Te invito a celebrar mi gran noche!">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <!-- Título -->
+  <title>Mis 15 Años - [Nombre de la festejante]</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/themes.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="theme-romantic-blush">
+  <!-- ============================================
+       HEADER
+       ============================================ -->
+  <header class="header">
+    <div class="header__content">
+      <button class="header__music-toggle" aria-label="Activar o desactivar música">
+        <svg class="icon-music" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M9 18V5l12-2v13"/>
+          <circle cx="6" cy="18" r="3"/>
+          <circle cx="18" cy="16" r="3"/>
+        </svg>
+        <span class="music-status">♪ Música</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============================================
+       MAIN CONTENT
+       ============================================ -->
+  <main>
+    <!-- HERO / PORTADA -->
+    <section class="hero" id="hero">
+      <div class="hero__overlay"></div>
+      <div class="hero__content container">
+        <span class="hero__subtitle">Te invito a</span>
+        <h1 class="hero__title">[Nombre de la festejante]</h1>
+        <span class="hero__event">Mis 15 Años</span>
+        <p class="hero__date">15 de Junio de 2026</p>
+        <div class="hero__actions">
+          <button class="btn btn--primary hero__btn hero__btn--music" id="open-with-music" aria-label="Abrir invitación con música">
+            <svg class="hero__btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M9 18V5l12-2v13"/>
+              <circle cx="6" cy="18" r="3"/>
+              <circle cx="18" cy="16" r="3"/>
+            </svg>
+            Con música
+          </button>
+          <button class="btn btn--secondary hero__btn hero__btn--no-music" id="open-without-music" aria-label="Abrir invitación sin música">
+            <svg class="hero__btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M9 9v6"/>
+              <path d="M4 9h12"/>
+              <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+            </svg>
+            Sin música
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- CUENTA REGRESIVA -->
+    <section class="countdown" id="countdown">
+      <div class="container">
+        <h2 class="section__title">La cuenta regresiva</h2>
+        <div class="countdown__timer">
+          <div class="countdown__block">
+            <span class="countdown__number" id="days">00</span>
+            <span class="countdown__label">Días</span>
+          </div>
+          <div class="countdown__block">
+            <span class="countdown__number" id="hours">00</span>
+            <span class="countdown__label">Horas</span>
+          </div>
+          <div class="countdown__block">
+            <span class="countdown__number" id="minutes">00</span>
+            <span class="countdown__label">Minutos</span>
+          </div>
+          <div class="countdown__block">
+            <span class="countdown__number" id="seconds">00</span>
+            <span class="countdown__label">Segundos</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENSAJE DE INVITACIÓN -->
+    <section class="message" id="message">
+      <div class="container">
+        <p class="message__text">
+          Quiero que seas parte de una noche inolvidable
+        </p>
+        <p class="message__subtext">
+          Será un honor celebrar contigo esta noche mágica
+        </p>
+      </div>
+    </section>
+
+    <!-- CUANDO (FECHA Y HORA) -->
+    <section class="when" id="when">
+      <div class="container">
+        <h2 class="section__title">Cuando</h2>
+        <div class="when__content">
+          <div class="when__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+              <line x1="16" y1="2" x2="16" y2="6"/>
+              <line x1="8" y1="2" x2="8" y2="6"/>
+              <line x1="3" y1="10" x2="21" y2="10"/>
+            </svg>
+          </div>
+          <div class="when__details">
+            <p class="when__date">Domingo 15 de Junio de 2026</p>
+            <p class="when__time">20:00 hs</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DONDE (UBICACIÓN) -->
+    <section class="where" id="where">
+      <div class="container">
+        <h2 class="section__title">Donde</h2>
+        <div class="where__content">
+          <div class="where__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+          </div>
+          <div class="where__details">
+            <p class="where__salon">Salón de Eventos Ejemplo</p>
+            <p class="where__address">Av. Ejemplo 1234, Buenos Aires</p>
+          </div>
+          <a href="https://maps.google.com/?q=Av.+Ejemplo+1234+Buenos+Aires"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="btn btn--primary where__btn">
+            Ver ubicación
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- DRESS CODE -->
+    <section class="dresscode" id="dresscode">
+      <div class="container">
+        <h2 class="section__title"> Dress Code</h2>
+        <div class="dresscode__content">
+          <div class="dresscode__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+              <circle cx="12" cy="7" r="4"/>
+            </svg>
+          </div>
+          <p class="dresscode__text">Formal</p>
+          <p class="dresscode__desc">Traje de gala - No jeans ni sandals</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ITINERARIO -->
+    <section class="itinerary" id="itinerary">
+      <div class="container">
+        <h2 class="section__title">Itinerario</h2>
+        <div class="itinerary__timeline">
+          <div class="itinerary__item">
+            <span class="itinerary__time">20:00</span>
+            <div class="itinerary__dot"></div>
+            <div class="itinerary__details">
+              <p class="itinerary__activity">Recepción</p>
+              <p class="itinerary__location">Entrada principal</p>
+            </div>
+          </div>
+          <div class="itinerary__item">
+            <span class="itinerary__time">21:00</span>
+            <div class="itinerary__dot"></div>
+            <div class="itinerary__details">
+              <p class="itinerary__activity">Cena</p>
+              <p class="itinerary__location">Salón principal</p>
+            </div>
+          </div>
+          <div class="itinerary__item">
+            <span class="itinerary__time">22:30</span>
+            <div class="itinerary__dot"></div>
+            <div class="itinerary__details">
+              <p class="itinerary__activity">Pastel</p>
+              <p class="itinerary__location">Salón principal</p>
+            </div>
+          </div>
+          <div class="itinerary__item">
+            <span class="itinerary__time">23:00</span>
+            <div class="itinerary__dot"></div>
+            <div class="itinerary__details">
+              <p class="itinerary__activity">Baile</p>
+              <p class="itinerary__location">Salón principal</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MESA DE REGALOS -->
+    <section class="gifts" id="gifts">
+      <div class="container">
+        <h2 class="section__title">Mesa de Regalos</h2>
+        <div class="gifts__content">
+          <p class="gifts__text">Tu presencia es el mejor regalo, pero si deseas colaborar...</p>
+          <p class="gifts__store">Falabella</p>
+          <a href="https://falabella.com.ar"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="btn btn--primary gifts__btn">
+            Ver lista de regalos
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- HASHTAG -->
+    <section class="hashtag" id="hashtag">
+      <div class="container">
+        <h2 class="section__title">Comparte tus fotos</h2>
+        <p class="hashtag__text">Usa el hashtag</p>
+        <p class="hashtag__tag">#XVNombre</p>
+      </div>
+    </section>
+
+    <!-- PLAYLIST -->
+    <section class="playlist" id="playlist">
+      <div class="container">
+        <h2 class="section__title">Playlist</h2>
+        <p class="playlist__text">¿Qué canción no puede faltar?</p>
+        <a href="https://open.spotify.com/"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="btn btn--secondary playlist__btn">
+          Sugiere una canción
+        </a>
+      </div>
+    </section>
+
+    <!-- GALERÍA -->
+    <section class="gallery" id="gallery" aria-label="Galería de fotos">
+      <div class="container">
+        <h2 class="section__title">Galería</h2>
+        <div class="gallery__carousel" role="region" aria-label="Carrusel de fotos">
+          <div class="gallery__track" id="gallery-track">
+            <div class="gallery__slide">
+              <img src="img/457.jpg" alt="Foto 1 de la festejante" loading="lazy">
+            </div>
+            <div class="gallery__slide">
+              <img src="img/457.jpg" alt="Foto 2 de la festejante" loading="lazy">
+            </div>
+            <div class="gallery__slide">
+              <img src="img/457.jpg" alt="Foto 3 de la festejante" loading="lazy">
+            </div>
+            <div class="gallery__slide">
+              <img src="img/457.jpg" alt="Foto 4 de la festejante" loading="lazy">
+            </div>
+          </div>
+          <div class="gallery__controls">
+            <button class="gallery__arrow gallery__arrow--prev" aria-label="Foto anterior">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="15 18 9 12 15 6"/>
+              </svg>
+            </button>
+            <button class="gallery__arrow gallery__arrow--next" aria-label="Foto siguiente">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="9 18 15 12 9 6"/>
+              </svg>
+            </button>
+          </div>
+          <div class="gallery__dots" role="tablist" aria-label="Navegación de fotos">
+            <button class="gallery__dot gallery__dot--active" role="tab" aria-selected="true" aria-label="Ver foto 1"></button>
+            <button class="gallery__dot" role="tab" aria-selected="false" aria-label="Ver foto 2"></button>
+            <button class="gallery__dot" role="tab" aria-selected="false" aria-label="Ver foto 3"></button>
+            <button class="gallery__dot" role="tab" aria-selected="false" aria-label="Ver foto 4"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INFORMACIÓN (PRECIOS) -->
+    <section class="info" id="info">
+      <div class="container">
+        <h2 class="section__title">Información</h2>
+        <div class="info__content">
+          <div class="info__pricing">
+            <h3 class="info__subtitle">Precios de Entrada</h3>
+            <table class="info__table" role="table" aria-label="Precios de entrada">
+              <thead>
+                <tr>
+                  <th scope="col">Categoría</th>
+                  < scope="col">Precio</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Adulto</td>
+                  <td data-price="adulto">$15.000</td>
+                </tr>
+                <tr>
+                  <td>Niño (5-10 años)</td>
+                  <td data-price="nino">$5.000</td>
+                </tr>
+                <tr>
+                  <td>Menor de 5 años</td>
+                  <td>Gratis</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="info__additional">
+            <h3 class="info__subtitle">Datos del Evento</h3>
+            <ul class="info__list">
+              <li>
+                <span class="info__label">Ubicación:</span>
+                <span class="info__value">Salón de Eventos Ejemplo</span>
+              </li>
+              <li>
+                <span class="info__label">Dress Code:</span>
+                <span class="info__value">Formal</span>
+              </li>
+              <li>
+                <span class="info__label">Incluye:</span>
+                <span class="info__value">Cena, pastel, bebidas y animación</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONFIRMACIÓN -->
+    <section class="rsvp" id="rsvp">
+      <div class="container">
+        <h2 class="section__title">Confirmar Asistencia</h2>
+        <p class="rsvp__text">Por favor, confirma tu asistencia antes del 1 de Junio</p>
+        <a href="https://forms.google.com/"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="btn btn--primary rsvp__btn">
+          Confirmar asistencia
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__text">[Nombre de la festejante] - 15 de Junio de 2026</p>
+    </div>
+  </footer>
+
+  <!-- Audio element para la música -->
+  <audio id="audio-player" loop>
+    <source src="audio/123.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Scripts -->
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
